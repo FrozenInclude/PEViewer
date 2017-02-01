@@ -15,7 +15,6 @@ WORD LittleEndiantoBig(WORD num);
  PE_STRUCTURE  pe;
  static int count = 0;
 
-
 WORD LittleEndiantoBig(WORD num) {
 	WORD num1 = num >> 8;
 	WORD num2 = num << 8;
@@ -75,12 +74,37 @@ void SetDosHeader() {
 	}
 }
 void SetNtHeader() {
+	char chracteristcsList[15]="";
+	int pushcount = 0;
 	const NTheaderIndex = count + 32;
 	pe.NTHeader.Signatures = pebuffer[NTheaderIndex];
+	pe.NTHeader.FileHeader.Machine = pebuffer[NTheaderIndex+1];
+	pe.NTHeader.FileHeader.NumberOfSections = pebuffer[NTheaderIndex + 2];
+	pe.NTHeader.FileHeader.TimeDateStamp = (pebuffer[NTheaderIndex+4] << 4) + pebuffer[NTheaderIndex+3];
+	pe.NTHeader.FileHeader.PointerToSymbolTable = (pebuffer[NTheaderIndex + 6] << 4) + pebuffer[NTheaderIndex + 5];
+	pe.NTHeader.FileHeader.NumberOfSymbols= (pebuffer[NTheaderIndex + 8] << 4) + pebuffer[NTheaderIndex + 7];
+	pe.NTHeader.FileHeader.Characteristics = pebuffer[NTheaderIndex + 9];
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x1) == IMAGE_FILE_RELOCS_STRIPPED)chracteristcsList[pushcount++]=" IMAGE_FILE_RELOCS_STRIPPED";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x2) == IMAGE_FILE_EXECUTABLE_IMAGE)chracteristcsList[pushcount++] = "IMAGE_FILE_EXECUTABLE_IMAGE";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x4) == IMAGE_FILE_LINE_NUMS_STRIPPED)chracteristcsList[pushcount++] = "IMAGE_FILE_LINE_NUMS_STRIPPED";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x8) == IMAGE_FILE_LOCAL_SYMS_STRIPPED)chracteristcsList[pushcount++] = "IMAGE_FILE_LOCAL_SYMS_STRIPPED";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x10) == IMAGE_FILE_AGGRESIVE_WS_TRIM)chracteristcsList[pushcount++] = "IMAGE_FILE_AGGRESIVE_WS_TRIM";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x20) == IMAGE_FILE_LARGE_ADDRESS_AWARE)chracteristcsList[pushcount++] = " IMAGE_FILE_LARGE_ADDRESS_AWARE";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x80) == IMAGE_FILE_BYTES_REVERSED_LO)chracteristcsList[pushcount++] = "IMAGE_FILE_BYTES_REVERSED_LO";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x100) == IMAGE_FILE_32BIT_MACHINE)chracteristcsList[pushcount++] = "IMAGE_FILE_32BIT_MACHINE";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x200) == IMAGE_FILE_DEBUG_STRIPPED)chracteristcsList[pushcount++] = "IMAGE_FILE_DEBUG_STRIPPED";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x400) == IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP)chracteristcsList[pushcount++] = "IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x800) == IMAGE_FILE_NET_RUN_FROM_SWAP)chracteristcsList[pushcount++] = "IMAGE_FILE_NET_RUN_FROM_SWAP";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x1000) == IMAGE_FILE_SYSTEM)chracteristcsList[pushcount++] = "IMAGE_FILE_SYSTEM";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x2000) == IMAGE_FILE_DLL)chracteristcsList[pushcount++] = "IMAGE_FILE_DLL";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x4000) == IMAGE_FILE_UP_SYSTEM_ONLY)chracteristcsList[pushcount++] = "IMAGE_FILE_UP_SYSTEM_ONLY";
+	if ((pe.NTHeader.FileHeader.Characteristics & 0x8000) == IMAGE_FILE_BYTES_REVERSED_HI)chracteristcsList[pushcount++] = "IMAGE_FILE_BYTES_REVERSED_HI";
 }
 void ShowNtHeader() {
 	printf("\n\n============ImageNtHeader============\n\n");
 	printf("%08X - Signature:0x%04X\n", pe.ImageDosHeader.e_lfanew, pe.NTHeader.Signatures);
+	printf("\n\n============File Header============\n\n");
+	printf("%08X - Machine:0x%04X\n", offsetof(IMAGE_FILE_HEADER,Machine) + (pe.ImageDosHeader.e_lfanew + sizeof(WORD), pe.NTHeader.FileHeader.Machine));
 }
 void ShowDosStopCode() {
 	printf("\n\n============Dos stub Code============\n\n");

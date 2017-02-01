@@ -1,0 +1,81 @@
+﻿빌드 시작: 2017-01-25 오후 3:17:20
+     1>2 노드의 "C:\Users\Administrator\Documents\Visual Studio 2015\Projects\XorPacker\src\XorPacker\XorPacker.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TC /errorReport:prompt "소스.c"
+         소스.c
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(29): warning C4013: 'exit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(25): warning C4101: 'ch' :참조되지 않은 지역 변수입니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(87): warning C4047: '=': 'char'의 간접 참조 수준이 'char [28]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(88): warning C4047: '=': 'char'의 간접 참조 수준이 'char [28]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(89): warning C4047: '=': 'char'의 간접 참조 수준이 'char [30]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(90): warning C4047: '=': 'char'의 간접 참조 수준이 'char [31]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(91): warning C4047: '=': 'char'의 간접 참조 수준이 'char [29]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(92): warning C4047: '=': 'char'의 간접 참조 수준이 'char [32]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(93): warning C4047: '=': 'char'의 간접 참조 수준이 'char [29]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(94): warning C4047: '=': 'char'의 간접 참조 수준이 'char [25]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(95): warning C4047: '=': 'char'의 간접 참조 수준이 'char [26]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(96): warning C4047: '=': 'char'의 간접 참조 수준이 'char [35]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(97): warning C4047: '=': 'char'의 간접 참조 수준이 'char [29]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(98): warning C4047: '=': 'char'의 간접 참조 수준이 'char [18]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(99): warning C4047: '=': 'char'의 간접 참조 수준이 'char [15]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(100): warning C4047: '=': 'char'의 간접 참조 수준이 'char [26]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(101): warning C4047: '=': 'char'의 간접 참조 수준이 'char [29]'과(와) 다릅니다.
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(107): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(107): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(107): warning C4473: 'printf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(107): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(107): note: the missing variadic argument 2 is required by format string '%04X'
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(113): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(113): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(120): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(120): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(136): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(136): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(137): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(137): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(138): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(138): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(139): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(139): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(139): warning C4778: 'printf' : unterminated format string '%\n'
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(140): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(140): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(141): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(141): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(142): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(142): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(143): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(143): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(144): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(144): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(145): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(145): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(146): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(146): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(146): warning C4778: 'printf' : unterminated format string '%\n'
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(147): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(147): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(148): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(148): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(149): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(149): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(151): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(151): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(153): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(153): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(154): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(154): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(156): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(156): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(158): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(158): note: consider using '%zX' in the format string
+     1>c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\소스.c(6): warning C4005: 'maxsize': 매크로 재정의
+         c:\users\administrator\documents\visual studio 2015\projects\xorpacker\src\xorpacker\peview.h(5): note: 'maxsize'의 이전 정의를 참조하십시오.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Documents\Visual Studio 2015\Projects\XorPacker\src\x64\Debug\XorPacker.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Administrator\Documents\Visual Studio 2015\Projects\XorPacker\src\x64\Debug\XorPacker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Documents\Visual Studio 2015\Projects\XorPacker\src\x64\Debug\XorPacker.lib" /MACHINE:X64 "x64\Debug\소스.obj"
+         XorPacker.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\XorPacker\src\x64\Debug\XorPacker.exe
+     1>"C:\Users\Administrator\Documents\Visual Studio 2015\Projects\XorPacker\src\XorPacker\XorPacker.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.81
