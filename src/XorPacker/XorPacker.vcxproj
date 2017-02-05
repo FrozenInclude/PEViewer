@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="소스.c" />
+    <ClCompile Include="PeViewer.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PeHeader.h" />
